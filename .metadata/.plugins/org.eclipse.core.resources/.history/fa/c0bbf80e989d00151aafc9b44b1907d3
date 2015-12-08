@@ -1,0 +1,11 @@
+package bsi.lui.pa1.FileManager;
+
+import java.io.File;
+
+public class Controller {
+	public Controller(){
+		File root = new File(".");
+	}
+	
+	public void foo(){}
+}

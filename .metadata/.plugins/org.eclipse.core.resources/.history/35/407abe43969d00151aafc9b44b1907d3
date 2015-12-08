@@ -1,0 +1,48 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
+
+
+public class FileManager extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private Container con;
+	DefaultListModel<String> fileTreeModel = new DefaultListModel<String>();
+	JList<String> fileTreeView = new JList<String>(fileTreeModel);
+
+	public static void main(String[] args){
+		new FileManager();
+	}
+	
+	public FileManager() {
+		con = getContentPane();
+		con.setLayout(new BorderLayout());
+		con.add(new JScrollPane(fileTreeView), BorderLayout.CENTER);
+		
+		//show gui
+		this.addWindowListener(new WindowAdapter(){
+			@Override
+			public void windowClosing(WindowEvent e){
+				exit();
+			}
+		});
+		
+		setSize(450, 350);
+		setTitle("File Manager");
+		setVisible(true);
+	}
+	
+	public void exit(){
+		dispose();
+		System.exit(0);
+	}
+}

@@ -1,0 +1,15 @@
+package bsi.lui.pa1.FileManager;
+
+import java.awt.List;
+import java.io.File;
+
+public class Controller {
+	List files;
+	
+	public Controller(){
+		File root = new File(".");
+		files = getFi
+	}
+	
+	public void foo(){}
+}

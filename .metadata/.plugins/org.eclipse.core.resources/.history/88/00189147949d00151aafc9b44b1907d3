@@ -1,0 +1,25 @@
+import javax.swing.JFrame;
+
+
+public class FileManager extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public static void main(String[] args){
+		new FileManager();
+	}
+	
+	public FileManager() {
+		
+		//show gui
+		setSize(450, 350);
+		setVisible(true);
+	}
+	
+	public void exit(){
+		dispose();
+		System.exit(0);
+	}
+}

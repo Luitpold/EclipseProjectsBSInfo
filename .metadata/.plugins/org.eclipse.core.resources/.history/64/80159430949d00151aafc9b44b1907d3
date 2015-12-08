@@ -1,0 +1,20 @@
+import javax.swing.JFrame;
+
+
+public class FileManager extends JFrame {
+	public static void main(String[] args){
+		new FileManager();
+	}
+	
+	public FileManager() {
+		
+		//show gui
+		setSize(450, 350);
+		setVisible(true);
+	}
+	
+	public void exit(){
+		dispose();
+		System.exit();
+	}
+}
