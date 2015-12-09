@@ -1,0 +1,6 @@
+ 1. Fix remove elemet bugs
+ 2. Cleanup code
+ 3. Add comments to code
+ 4. Delete key to remove elements
+ 5. Request focus after every action to improve flow
+ 6. Configuration for different .todo files and different directories
